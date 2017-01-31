@@ -7,16 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/BackgroundConnexion.jpg"/>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock>TITRE</TextBlock>
-            <TextBlock>TITRE</TextBlock>
+            <TextBlock FontSize="36">Binvenue</TextBlock>
+            <TextBlock FontSize="36">BlackJack Game</TextBlock>
         </StackPanel>
 
         <Grid Grid.Row="1">
@@ -24,21 +28,40 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
-
-                <StackPanel Orientation="Vertical" 
+            <StackPanel Orientation="Vertical" 
                             Grid.Column="0" 
-                            HorizontalAlignment="Center">
-                    <TextBlock Text="Connectez vous" />
-                </StackPanel>
-            
-                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Right" Margin="0,0,100,0">
+                <TextBlock FontSize="36" Text="Connectez vous" Margin="0,0,0,20" />
+                <TextBlock Text="Identifiant" HorizontalAlignment="Center" />
+                <TextBox/>
+                <TextBlock Text="Password" HorizontalAlignment="Center" />
+                <TextBox/>
+                <Button HorizontalAlignment="Center" Width="150" Height="50" 
+                        Content="Valider"  
+                        />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
                             Grid.Column="1"
-                            HorizontalAlignment="Center">
-                    <TextBlock Text="Inscrivez vous" />
-                </StackPanel>
+                            HorizontalAlignment="Left" Margin="100,0,0,0">
+                <TextBlock FontSize="36" Text="Inscrivez vous" />
+                <TextBlock Text="Username" HorizontalAlignment="Center" />
+                <TextBox/>
+                <TextBlock Text="FirstName" HorizontalAlignment="Center" />
+                <TextBox/>
+                <TextBlock Text="LastName" HorizontalAlignment="Center" />
+                <TextBox/>
+                <TextBlock Text="Email" HorizontalAlignment="Center" />
+                <TextBox/>
+                <TextBlock Text="Password" HorizontalAlignment="Center" />
+                <TextBox/>
+                <Button HorizontalAlignment="Center" Width="150" Height="50" 
+                        Content="Valider"  
+                        />
+            </StackPanel>
 
         </Grid>
-        
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="1086,396,0,0" VerticalAlignment="Top" Width="100"/>
+
     </Grid>
 </Page>
