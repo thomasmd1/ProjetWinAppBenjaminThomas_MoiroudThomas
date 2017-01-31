@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-31T12:50:51.206</Modified>
+      <Modified>2017-01-31T13:28:09.661</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-01-31T12:50:50.823</Modified>
+      <Modified>2017-01-31T13:28:08.304</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Benjamin\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -450,7 +450,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\bin\x64\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
-      <Modified>2017-01-31T12:50:50.002</Modified>
+      <Modified>2017-01-31T13:28:06.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -492,7 +492,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\WinAppBJ.xr.xml">
       <PackagePath>WinAppBJ.xr.xml</PackagePath>
-      <Modified>2017-01-31T12:46:33.813</Modified>
+      <Modified>2017-01-31T13:28:08.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -501,11 +501,11 @@
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-31T12:46:34.952</Modified>
+      <Modified>2017-01-31T13:28:09.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-01-31T12:50:51.203</Modified>
+      <Modified>2017-01-31T13:28:09.656</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

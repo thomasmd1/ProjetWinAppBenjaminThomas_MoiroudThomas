@@ -14,3 +14,4 @@ E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\pri.resfil
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\qualifiers.txt
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\qualifiers.txt.intermediate
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\DataModel.csprojResolveAssemblyReference.cache

@@ -1,5 +1,4 @@
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\App.xbf
-E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\MainPage.xbf
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\WinAppBJ.xr.xml
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\WinAppBJ.exe
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\WinAppBJ.pdb
@@ -117,13 +116,9 @@ E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\DataModel.p
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\WinAppBJ.csprojResolveAssemblyReference.cache
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\App.g.i.cs
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\App.g.cs
-E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\MainPage.g.i.cs
-E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\MainPage.g.cs
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\XamlTypeInfo.g.cs
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\App.xaml
-E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\MainPage.xaml
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\App.xbf
-E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\MainPage.xbf
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\XamlSaveStateFile.xml
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\WinAppBJ.exe
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\WinAppBJ.pdb
@@ -196,3 +191,13 @@ E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\MultipleQua
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\resources.en-us.resfiles
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\resources.en-us.resfiles.intermediate
 E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\ProjectArchitectures.txt
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\TestDeck.xbf
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\TestDeck.g.i.cs
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\TestDeck.g.cs
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\TestDeck.xaml
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\TestDeck.xbf
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\bin\x64\Debug\Login.xbf
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\Login.g.i.cs
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\Login.g.cs
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\Login.xaml
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\obj\x64\Debug\Login.xbf
