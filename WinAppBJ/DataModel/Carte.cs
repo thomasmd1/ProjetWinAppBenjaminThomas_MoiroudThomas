@@ -8,5 +8,6 @@ namespace DataModel
 {
     class Carte
     {
+        public int Numero { get; set; }
     }
 }
