@@ -20,9 +20,9 @@ namespace WinAppBJ
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class Login : Page
+    public sealed partial class LoginPage : Page
     {
-        public Login()
+        public LoginPage()
         {
             this.InitializeComponent();
         }

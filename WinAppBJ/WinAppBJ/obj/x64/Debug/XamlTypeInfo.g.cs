@@ -139,7 +139,7 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             _typeNameTable[3] = "WinAppBJ.TestDeck";
 
             _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::WinAppBJ.Login);
+            _typeTable[0] = typeof(global::WinAppBJ.LoginPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::WinAppBJ.TestDeck);
@@ -177,7 +177,7 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Login() { return new global::WinAppBJ.Login(); }
+        private object Activate_0_Login() { return new global::WinAppBJ.LoginPage(); }
         private object Activate_3_TestDeck() { return new global::WinAppBJ.TestDeck(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
