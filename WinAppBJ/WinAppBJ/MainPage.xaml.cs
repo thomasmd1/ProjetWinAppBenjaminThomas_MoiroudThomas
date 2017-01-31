@@ -25,6 +25,7 @@ namespace WinAppBJ
         public MainPage()
         {
             this.InitializeComponent();
+            Deck d = new Deck();
         }
     }
 }
