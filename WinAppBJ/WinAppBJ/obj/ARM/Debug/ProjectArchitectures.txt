@@ -1,0 +1,2 @@
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\DataModel.csproj;arm
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\WinAppBJ\WinAppBJ.csproj;arm

@@ -1,0 +1,16 @@
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\bin\x64\Debug\DataModel.dll
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\bin\x64\Debug\DataModel.pdb
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\bin\x64\Debug\DataModel.pri
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\DataModel.dll
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\DataModel.pdb
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\priconfig.xml
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\priconfig.xml.intermediate
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\layout.resfiles
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\layout.resfiles.intermediate
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\resources.resfiles
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\resources.resfiles.intermediate
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\pri.resfiles
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\pri.resfiles.intermediate
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\qualifiers.txt
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\qualifiers.txt.intermediate
+E:\OneDrive - Ynov\WindowsApp\Projet\WinAppBJ\DataModel\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt

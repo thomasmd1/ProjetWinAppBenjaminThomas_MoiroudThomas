@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-    class Card
+    public class Card
     {
         public int Number { get; set; }
         public String Color { get; set; }
@@ -17,6 +17,19 @@ namespace DataModel
             this.Number = n;
             this.Color = c;
             this.Symbol = s;
+        }
+
+        public override string ToString()
+        {
+            switch (Number)
+            {
+                case 0:return "A" + " " + this.Color + " " + this.Symbol; break;
+                case 9: return "10" + " " + this.Color + " " + this.Symbol; break;
+                case 10: return "J" + " " + this.Color + " " + this.Symbol; break;
+                case 11: return "Q" + " " + this.Color + " " + this.Symbol; break;
+                case 12: return "K" + " " + this.Color + " " + this.Symbol; break;
+                default: return this.Number + " " + this.Color + " " + this.Symbol; break;
+            }
         }
     }
 }

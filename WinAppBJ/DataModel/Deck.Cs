@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-    class Deck
+    public class Deck
     {
         public List<Card> Cards { get; set; }
 
@@ -20,7 +20,7 @@ namespace DataModel
             Cards = new List<Card>();
             for(int i = 0; i < 4; i++)
             {
-                for(int o = 0; o < 13; i++)
+                for(int o = 0; o < 13; o++)
                 {
                     switch (i)
                     {

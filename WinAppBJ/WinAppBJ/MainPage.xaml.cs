@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -12,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,6 +29,8 @@ namespace WinAppBJ
         {
             this.InitializeComponent();
             Deck d = new Deck();
+
+            this.DataContext = d;
         }
     }
 }

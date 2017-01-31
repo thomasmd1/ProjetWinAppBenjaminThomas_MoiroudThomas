@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-    class User
+    public class User
     {
         public String Name { get; set; }
         public String PictureUri { get; set; }

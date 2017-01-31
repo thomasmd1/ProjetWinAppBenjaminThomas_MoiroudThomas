@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button />
+        <ListBox x:Name="listView" 
+                  HorizontalAlignment="Left" Margin="75,10,0,160" 
+                  Width="1050"
+                  ItemsSource="{Binding Cards}"/>
+
     </Grid>
 </Page>

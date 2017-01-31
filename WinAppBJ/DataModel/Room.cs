@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataModel
 {
-    class Room
+    public class Room
     {
         public String Name { get; set; }
         public int MaxUser { get; set; }
