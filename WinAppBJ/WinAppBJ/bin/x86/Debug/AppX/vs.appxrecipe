@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-31T14:42:05.709</Modified>
+      <Modified>2017-01-31T15:13:03.463</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-01-31T14:42:04.266</Modified>
+      <Modified>2017-01-31T15:13:02.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -496,7 +496,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.xr.xml">
       <PackagePath>WinAppBJ.xr.xml</PackagePath>
-      <Modified>2017-01-31T14:35:58.543</Modified>
+      <Modified>2017-01-31T15:13:01.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -505,11 +505,11 @@
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-31T14:42:05.480</Modified>
+      <Modified>2017-01-31T15:13:03.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-01-31T14:42:05.702</Modified>
+      <Modified>2017-01-31T15:13:03.458</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

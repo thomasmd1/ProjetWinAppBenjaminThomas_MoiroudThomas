@@ -32,10 +32,10 @@
                             Grid.Column="0" 
                             HorizontalAlignment="Right" Margin="0,0,100,0">
                 <TextBlock FontSize="36" Text="Connectez vous" Margin="0,0,0,20" />
-                <TextBlock Text="Identifiant" HorizontalAlignment="Center" />
+                <TextBlock  Text="Identifiant" HorizontalAlignment="Center" />
                 <TextBox/>
                 <TextBlock Text="Password" HorizontalAlignment="Center" />
-                <TextBox/>
+                <PasswordBox x:Name="passwordConnection"/>
                 <Button HorizontalAlignment="Center" Width="150" Height="50" 
                         Content="Valider"  
                         />
@@ -45,18 +45,18 @@
                             Grid.Column="1"
                             HorizontalAlignment="Left" Margin="100,0,0,0">
                 <TextBlock FontSize="36" Text="Inscrivez vous" />
-                <TextBlock Text="Username" HorizontalAlignment="Center" />
+                <TextBlock Text="Username" HorizontalAlignment="Left" />
                 <TextBox/>
-                <TextBlock Text="FirstName" HorizontalAlignment="Center" />
+                <TextBlock Text="FirstName" HorizontalAlignment="Left" />
                 <TextBox/>
-                <TextBlock Text="LastName" HorizontalAlignment="Center" />
+                <TextBlock Text="LastName" HorizontalAlignment="Left" />
                 <TextBox/>
-                <TextBlock Text="Email" HorizontalAlignment="Center" />
+                <TextBlock Text="Email" HorizontalAlignment="Left" />
                 <TextBox/>
-                <TextBlock Text="Password" HorizontalAlignment="Center" />
-                <TextBox/>
+                <TextBlock Text="Password" HorizontalAlignment="Left" />
+                <PasswordBox/>
                 <Button HorizontalAlignment="Center" Width="150" Height="50" 
-                        Content="Valider"  
+                        Content="Valider" Margin="0,20,0,0"  
                         />
             </StackPanel>
 
