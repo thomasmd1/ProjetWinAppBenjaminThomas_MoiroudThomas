@@ -8,15 +8,19 @@ namespace DataModel
 {
     public class User
     {
-        public String Name { get; set; }
+        public String Username { get; set; }
+        public String Firstname { get; set; }
+        public String Lastname { get; set; }
         public String Email { get; set; }
-        public String PictureUri { get; set; }
+        public String Password { get; set; }
 
-        public User(String n,String e)
+        public User(String username,String firstname,String lastname, String email, String password)
         {
-            this.Name = n;
-            this.Email = e;
-            this.PictureUri = "http://lorempixel.com/64/64/people/";
+            this.Username = username;
+            this.Firstname = firstname;
+            this.Lastname = lastname;
+            this.Email = email;
+            this.Password = password;
         }
     }
 }

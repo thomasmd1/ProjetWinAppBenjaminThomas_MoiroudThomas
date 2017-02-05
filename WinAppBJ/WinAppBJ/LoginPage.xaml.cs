@@ -1,10 +1,13 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WinAppBJ.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +28,30 @@ namespace WinAppBJ
         public LoginPage()
         {
             this.InitializeComponent();
+        }
+
+        private async void OnClickAddUser(object sender, RoutedEventArgs e)
+        {
+            string username = txbAddUsername.Text;
+            string firstname = txbAddFirstname.Text;
+            string lastname = txbAddLastname.Text;
+            string email = txbAddEmail.Text;
+            string password = txbAddPassword.Password;
+
+            User user = new User(username, firstname, lastname, email, password);
+
+            UserViewModel vm = (UserViewModel)this.DataContext;
+            
+            if (user != null)
+            {
+                vm.addNewUser(user);
+            }
+            else
+            {
+                var dialog = new MessageDialog("User Vide");
+                await dialog.ShowAsync();
+            }
+
         }
     }
 }

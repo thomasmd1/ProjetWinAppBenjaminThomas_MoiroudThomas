@@ -46,17 +46,17 @@
                             HorizontalAlignment="Left" Margin="100,0,0,0">
                 <TextBlock FontSize="36" Text="Inscrivez vous" />
                 <TextBlock Text="Username" HorizontalAlignment="Left" />
-                <TextBox/>
+                <TextBox x:Name="txbAddUsername"/>
                 <TextBlock Text="FirstName" HorizontalAlignment="Left" />
-                <TextBox/>
+                <TextBox x:Name="txbAddFirstname"/>
                 <TextBlock Text="LastName" HorizontalAlignment="Left" />
-                <TextBox/>
+                <TextBox x:Name="txbAddLastname"/>
                 <TextBlock Text="Email" HorizontalAlignment="Left" />
-                <TextBox/>
+                <TextBox x:Name="txbAddEmail"/>
                 <TextBlock Text="Password" HorizontalAlignment="Left" />
-                <PasswordBox/>
+                <PasswordBox x:Name="txbAddPassword"/>
                 <Button HorizontalAlignment="Center" Width="150" Height="50" 
-                        Content="Valider" Margin="0,20,0,0"  
+                        Content="Valider" Margin="0,20,0,0" Click="OnClickAddUser"  
                         />
             </StackPanel>
 
