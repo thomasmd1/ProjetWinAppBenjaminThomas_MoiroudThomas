@@ -40,7 +40,7 @@ namespace WinAppBJ
 
             User user = new User(username, firstname, lastname, email, password);
 
-            UserViewModel vm = (UserViewModel)this.DataContext;
+            UserViewModel vm = new UserViewModel();
 
             vm.addNewUser(user);
 
