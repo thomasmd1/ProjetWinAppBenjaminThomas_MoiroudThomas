@@ -32,5 +32,11 @@ namespace DataModel
                 }
             }
         }
+
+        public List<Card> Shuffle(List<Card> deck)
+        {
+
+            return deck;
+        }
     }
 }
