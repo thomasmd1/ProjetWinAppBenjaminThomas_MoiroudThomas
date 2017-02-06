@@ -16,26 +16,29 @@ namespace WinAppBJ.ViewModels
 
         public async void addNewUser(User user)
         {
-            var json = JsonConvert.SerializeObject(user);
-            var dialog = new MessageDialog(json);
-            await dialog.ShowAsync();
+            using (var client = new HttpClient())
+            {
+               client.BaseAddress = new Uri("http://demo.comte.re");
 
-            //using (var client = new HttpClient())
-            //{
-            //    client.BaseAddress = new Uri("http://demo.comte.re//api/auth/register");
+               var json = JsonConvert.SerializeObject(user);
+               var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
+               HttpResponseMessage response = await client.PostAsync("/api/auth/register", itemJson);
+               if (response.IsSuccessStatusCode)
+               {
+                    var dialog = new MessageDialog("Sa marche !!");
+                    await dialog.ShowAsync();
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Sa marche pas !!");
+                    await dialog.ShowAsync();
+                }
 
-                
-            //    //var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
-            //    //HttpResponseMessage response = await client.PostAsync("uri/to/call", itemJson);
-            //    //if (response.IsSuccessStatusCode)
-            //    //{
-            //    //}
-
-            //    var dialog = new MessageDialog(json);
-            //    await dialog.ShowAsync();
+                ////    var dialog = new MessageDialog(json);
+                ////    await dialog.ShowAsync();
 
 
-            //}
+            }
         }
     }
 }
