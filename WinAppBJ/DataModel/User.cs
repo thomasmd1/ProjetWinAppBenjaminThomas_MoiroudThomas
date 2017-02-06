@@ -8,19 +8,20 @@ namespace DataModel
 {
     public class User
     {
-        public String Username { get; set; }
-        public String Firstname { get; set; }
-        public String Lastname { get; set; }
-        public String Email { get; set; }
-        public String Password { get; set; }
+        
+        public String username { get; set; }
+        public String firstname { get; set; }
+        public String lastname { get; set; }
+        public String email { get; set; }
+        public String password { get; set; }
 
         public User(String username,String firstname,String lastname, String email, String password)
         {
-            this.Username = username;
-            this.Firstname = firstname;
-            this.Lastname = lastname;
-            this.Email = email;
-            this.Password = password;
+            this.username = username;
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.email = email;
+            this.password = password;
         }
     }
 }
