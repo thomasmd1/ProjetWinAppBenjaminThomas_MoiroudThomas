@@ -9,12 +9,12 @@
 
     <Grid Background="Green">
         <Grid.RowDefinitions>
-            <RowDefinition Height="200"></RowDefinition>
-            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Padding="25">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="25" x:Name="BanqueCard1">Aaaaa</TextBlock>
                 <TextBlock Margin="25" x:Name="BanqueCard2">Aaaaa</TextBlock>
@@ -24,26 +24,26 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="1">
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Margin="25" x:Name="PlayerCard1">Aaaaa</TextBlock>
-            <TextBlock Margin="25" x:Name="PlayerCard2">Aaaaa</TextBlock>
-            <TextBlock Margin="25" x:Name="PlayerCard3">Aaaaa</TextBlock>
-            <TextBlock Margin="25" x:Name="PlayerCard4">Aaaaa</TextBlock>
-            <TextBlock Margin="25" x:Name="PlayerCard5">Aaaaa</TextBlock>
-        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Padding="25">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="25" x:Name="PlayerCard1">Aaaaa</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard2">Aaaaa</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard3">Aaaaa</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard4">Aaaaa</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard5">Aaaaa</TextBlock>
+            </StackPanel>
         </StackPanel>
 
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <StackPanel Width="150px">
-                <TextBlock>Action</TextBlock>
-                <Button x:Name="buttonStart" Content="START" HorizontalAlignment="Left" Width="140" Height="80"/>
-                <Button x:Name="buttonEnd" Content="END" HorizontalAlignment="Left" Width="140" Height="80"/>
-                <Button x:Name="buttonHit" Content="HIT" HorizontalAlignment="Left" Width="140" Height="80"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Padding="25">
+            <StackPanel Width="150px" Margin="15">
+                <TextBlock Margin="5">Action</TextBlock>
+                <Button x:Name="buttonStart" Content="START" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
+                <Button x:Name="buttonEnd" Content="END" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
+                <Button x:Name="buttonHit" Content="HIT" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
             </StackPanel>
 
-            <StackPanel>
+            <StackPanel Margin="15">
                 <TextBlock>BET</TextBlock>
                 <RadioButton>5 $</RadioButton>
                 <RadioButton>15 $</RadioButton>
