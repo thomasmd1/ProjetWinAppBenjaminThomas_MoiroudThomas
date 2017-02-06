@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-06T19:48:46.916</Modified>
+      <Modified>2017-02-06T20:01:01.491</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T19:48:46.157</Modified>
+      <Modified>2017-02-06T20:01:01.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,7 +498,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\DataModel\bin\x86\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
-      <Modified>2017-02-06T19:26:09.107</Modified>
+      <Modified>2017-02-06T20:00:59.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\Assets\BackgroundConnexion.jpg">
       <PackagePath>Assets\BackgroundConnexion.jpg</PackagePath>
@@ -557,7 +557,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T19:48:46.911</Modified>
+      <Modified>2017-02-06T20:01:01.489</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

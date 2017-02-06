@@ -25,7 +25,7 @@ namespace DataModel
             this.password = password;
         }
 
-        public User(string email, string password , string secret)
+        public User(String email, String password , String secret)
         {
             this.email = email;
             this.password = password;
