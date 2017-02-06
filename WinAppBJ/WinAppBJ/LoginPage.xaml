@@ -33,7 +33,7 @@
                             HorizontalAlignment="Right" Margin="0,0,100,0">
                 <TextBlock FontSize="36" Text="Connectez vous" Margin="0,0,0,20" />
                 <TextBlock  Text="Identifiant" HorizontalAlignment="Center" />
-                <TextBox x:Name="txbLogin"/>
+                <TextBox x:Name="txbEmail"/>
                 <TextBlock Text="Password" HorizontalAlignment="Center" />
                 <PasswordBox x:Name="passwordConnection"/>
                 <Button HorizontalAlignment="Center" Width="150" Height="50" 

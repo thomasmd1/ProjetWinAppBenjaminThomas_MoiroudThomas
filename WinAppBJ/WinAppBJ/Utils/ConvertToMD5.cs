@@ -12,16 +12,11 @@ namespace WinAppBJ.Utils
 
         static public string EncodeTo64(string input)
         {
-            //Encode le password en 64
-            byte[] toEncodeAsBytes
-                  = System.Text.ASCIIEncoding.ASCII.GetBytes(input);
-            string valueB64
-                  = System.Convert.ToBase64String(toEncodeAsBytes);
-          
+           
             //encode en MD5
             MD5 md5 = System.Security.Cryptography.MD5.Create();
 
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(valueB64);
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
 
             byte[] hash = md5.ComputeHash(inputBytes);
 
@@ -30,12 +25,17 @@ namespace WinAppBJ.Utils
             for (int i = 0; i < hash.Length; i++)
 
             {
-
                 sb.Append(hash[i].ToString("x2"));
-
             }
 
-            return sb.ToString();
+            
+
+            //Encode le password en 64
+            var valueB64 = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
+            return System.Convert.ToBase64String(valueB64);
+
+            
+
 
         }
 
