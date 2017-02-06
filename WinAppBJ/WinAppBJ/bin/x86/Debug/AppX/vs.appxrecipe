@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-06T09:00:01.241</Modified>
+      <Modified>2017-02-06T09:46:56.892</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T09:00:00.476</Modified>
+      <Modified>2017-02-06T09:46:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -454,7 +454,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\bin\x86\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
-      <Modified>2017-02-06T07:43:42.286</Modified>
+      <Modified>2017-02-06T09:34:01.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\Assets\BackgroundConnexion.jpg">
       <PackagePath>Assets\BackgroundConnexion.jpg</PackagePath>
@@ -513,7 +513,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T09:00:01.234</Modified>
+      <Modified>2017-02-06T09:46:56.886</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

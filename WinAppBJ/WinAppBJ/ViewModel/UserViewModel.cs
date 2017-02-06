@@ -20,18 +20,20 @@ namespace WinAppBJ.ViewModels
             {
                client.BaseAddress = new Uri("http://demo.comte.re");
 
-               var json = JsonConvert.SerializeObject(user);
+               var json = JsonConvert.SerializeObject(new { user = user });
                var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
                HttpResponseMessage response = await client.PostAsync("/api/auth/register", itemJson);
                if (response.IsSuccessStatusCode)
                {
-                    var dialog = new MessageDialog("Sa marche !!");
+                    var dialog = new MessageDialog("Sa marche !!",json);
                     await dialog.ShowAsync();
+
                 }
                 else
                 {
-                    var dialog = new MessageDialog("Sa marche pas !!");
+                    var dialog = new MessageDialog("Sa marche pas !!",json);
                     await dialog.ShowAsync();
+
                 }
 
                 ////    var dialog = new MessageDialog(json);
