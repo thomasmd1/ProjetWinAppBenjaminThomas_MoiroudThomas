@@ -33,11 +33,11 @@
                             HorizontalAlignment="Right" Margin="0,0,100,0">
                 <TextBlock FontSize="36" Text="Connectez vous" Margin="0,0,0,20" />
                 <TextBlock  Text="Identifiant" HorizontalAlignment="Center" />
-                <TextBox x:Name="txbEmail"/>
+                <TextBox x:ConnectionId='8' x:Name="txbEmail"/>
                 <TextBlock Text="Password" HorizontalAlignment="Center" />
-                <PasswordBox x:Name="passwordConnection"/>
-                <Button HorizontalAlignment="Center" Width="150" Height="50" 
-                        Content="Valider" Click="OnClickConnectUser"  
+                <PasswordBox x:ConnectionId='9' x:Name="passwordConnection"/>
+                <Button x:ConnectionId='10' HorizontalAlignment="Center" Width="150" Height="50" 
+                        Content="Valider"                             
                         />
             </StackPanel>
 
@@ -46,22 +46,23 @@
                             HorizontalAlignment="Left" Margin="100,0,0,0">
                 <TextBlock FontSize="36" Text="Inscrivez vous" />
                 <TextBlock Text="Username" HorizontalAlignment="Left" />
-                <TextBox x:Name="txbAddUsername"/>
+                <TextBox x:ConnectionId='2' x:Name="txbAddUsername"/>
                 <TextBlock Text="FirstName" HorizontalAlignment="Left" />
-                <TextBox x:Name="txbAddFirstname"/>
+                <TextBox x:ConnectionId='3' x:Name="txbAddFirstname"/>
                 <TextBlock Text="LastName" HorizontalAlignment="Left" />
-                <TextBox x:Name="txbAddLastname"/>
+                <TextBox x:ConnectionId='4' x:Name="txbAddLastname"/>
                 <TextBlock Text="Email" HorizontalAlignment="Left" />
-                <TextBox x:Name="txbAddEmail"/>
+                <TextBox x:ConnectionId='5' x:Name="txbAddEmail"/>
                 <TextBlock Text="Password" HorizontalAlignment="Left" />
-                <PasswordBox x:Name="txbAddPassword"/>
-                <Button HorizontalAlignment="Center" Width="150" Height="50" 
-                        Content="Valider" Margin="0,20,0,0" Click="OnClickAddUser"  
+                <PasswordBox x:ConnectionId='6' x:Name="txbAddPassword"/>
+                <Button x:ConnectionId='7' HorizontalAlignment="Center" Width="150" Height="50" 
+                        Content="Valider" Margin="0,20,0,0"                         
                         />
             </StackPanel>
 
         </Grid>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="1086,396,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Left" Height="100" Margin="1086,396,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>
+

@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-06T18:47:29.539</Modified>
+      <Modified>2017-02-06T20:01:01.491</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T18:47:28.982</Modified>
+      <Modified>2017-02-06T20:01:01.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,7 +498,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\DataModel\bin\x86\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
-      <Modified>2017-02-06T18:19:59.525</Modified>
+      <Modified>2017-02-06T20:00:59.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\Assets\BackgroundConnexion.jpg">
       <PackagePath>Assets\BackgroundConnexion.jpg</PackagePath>
@@ -553,11 +553,11 @@
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-06T18:21:54.561</Modified>
+      <Modified>2017-02-06T19:29:58.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-06T18:47:29.536</Modified>
+      <Modified>2017-02-06T20:01:01.489</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
