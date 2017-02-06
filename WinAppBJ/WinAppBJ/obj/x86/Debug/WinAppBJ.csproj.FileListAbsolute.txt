@@ -405,3 +405,4 @@ C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\obj\x86\Debug\res
 C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\thomasmoiroud\Documents\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Newtonsoft.Json.dll

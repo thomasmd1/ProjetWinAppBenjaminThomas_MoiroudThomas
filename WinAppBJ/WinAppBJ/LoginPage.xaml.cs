@@ -30,7 +30,7 @@ namespace WinAppBJ
             this.InitializeComponent();
         }
 
-        private async void OnClickAddUser(object sender, RoutedEventArgs e)
+        private void OnClickAddUser(object sender, RoutedEventArgs e)
         {
             string username = txbAddUsername.Text;
             string firstname = txbAddFirstname.Text;
@@ -41,16 +41,9 @@ namespace WinAppBJ
             User user = new User(username, firstname, lastname, email, password);
 
             UserViewModel vm = (UserViewModel)this.DataContext;
-            
-            if (user != null)
-            {
-                vm.addNewUser(user);
-            }
-            else
-            {
-                var dialog = new MessageDialog("User Vide");
-                await dialog.ShowAsync();
-            }
+
+            vm.addNewUser(user);
+
 
         }
     }
