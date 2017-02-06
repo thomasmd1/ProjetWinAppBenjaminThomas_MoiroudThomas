@@ -25,7 +25,7 @@ namespace WinAppBJ.ViewModels
                HttpResponseMessage response = await client.PostAsync("/api/auth/register", itemJson);
                if (response.IsSuccessStatusCode)
                {
-                    var dialog = new MessageDialog("Sa marche !!",json);
+                    var dialog = new MessageDialog("l'utilisateur a bien été ajouté");
                     await dialog.ShowAsync();
 
                 }

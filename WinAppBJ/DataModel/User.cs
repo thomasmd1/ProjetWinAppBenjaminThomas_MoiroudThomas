@@ -23,5 +23,10 @@ namespace DataModel
             this.email = email;
             this.password = password;
         }
+
+        public User(string login, string password , string secret)
+        {
+
+        }
     }
 }
