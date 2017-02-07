@@ -46,5 +46,23 @@ namespace WinAppBJ
 
 
         }
+
+        private void OnClickConnectUser(object sender, RoutedEventArgs e)
+        {
+            string email = txbEmail.Text;
+            string password = passwordConnection.Password;
+            string secret = Utils.ConvertToMD5.EncodeTo64(password);
+
+            User user = new User(email, password, secret);
+
+
+            UserViewModel vm = new UserViewModel();
+
+            vm.connectUser(user);
+
+            //var dialog = new MessageDialog(secret);
+            //await dialog.ShowAsync();
+
+        }
     }
 }

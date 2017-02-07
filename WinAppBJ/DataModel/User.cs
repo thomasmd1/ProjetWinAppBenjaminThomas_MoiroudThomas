@@ -14,6 +14,7 @@ namespace DataModel
         public String lastname { get; set; }
         public String email { get; set; }
         public String password { get; set; }
+        public String secret { get; set; }
 
         public User(String username,String firstname,String lastname, String email, String password)
         {
@@ -22,6 +23,13 @@ namespace DataModel
             this.lastname = lastname;
             this.email = email;
             this.password = password;
+        }
+
+        public User(String email, String password , String secret)
+        {
+            this.email = email;
+            this.password = password;
+            this.secret = secret;
         }
     }
 }
