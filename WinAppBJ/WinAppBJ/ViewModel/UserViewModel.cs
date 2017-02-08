@@ -8,6 +8,8 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Windows;
 using Windows.UI.Popups;
+using Windows.Data.Json;
+using Newtonsoft.Json.Linq;
 
 namespace WinAppBJ.ViewModels
 {
@@ -38,12 +40,9 @@ namespace WinAppBJ.ViewModels
 
                 ////    var dialog = new MessageDialog(json);
                 ////    await dialog.ShowAsync();
-
-
             }
-
-
         }
+
         public async void connectUser(User user)
         {
             using (var client = new HttpClient())
@@ -55,13 +54,27 @@ namespace WinAppBJ.ViewModels
                 HttpResponseMessage response = await client.PostAsync("/api/auth/login", itemJson);
                 if (response.IsSuccessStatusCode)
                 {
-                    var dialog = new MessageDialog("l'utilisateur est connecté");
-                    await dialog.ShowAsync();
+                    var res = await response.Content.ReadAsStringAsync();
 
+                    var jobject = JObject.Parse(res);
+                    var resultsToken = jobject["tokens"];
+                    var resultsUser = jobject["user"];
+
+                    user.tokens = resultsToken["access_token"].ToString();
+
+
+                    user.firstname = resultsUser["firstname"].ToString();
+                    user.lastname = resultsUser["lastname"].ToString();
+                    user.email = resultsUser["email"].ToString();
+                    user.stack = int.Parse(resultsUser["stack"].ToString());
+
+                    var dialog = new MessageDialog(user.tokens);
+                    await dialog.ShowAsync();
                 }
                 else
                 {
-                    var dialog = new MessageDialog("l'utilisateur n'existe pas");
+                    var res = await response.Content.ReadAsStringAsync();
+                    var dialog = new MessageDialog("Connexion refuse",res);
                     await dialog.ShowAsync();
 
                 }

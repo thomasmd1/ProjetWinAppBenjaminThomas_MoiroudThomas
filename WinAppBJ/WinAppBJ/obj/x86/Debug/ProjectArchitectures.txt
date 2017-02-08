@@ -1,2 +1,2 @@
-C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\DataModel\DataModel.csproj;x86
-C:\Users\PC-THOMAS\Documents\WinAppBlackjack\WinAppBJ\WinAppBJ\WinAppBJ.csproj;x86
+C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\DataModel\DataModel.csproj;x86
+C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\WinAppBJ.csproj;x86

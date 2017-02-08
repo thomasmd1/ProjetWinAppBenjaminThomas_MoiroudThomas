@@ -15,6 +15,8 @@ namespace DataModel
         public String email { get; set; }
         public String password { get; set; }
         public String secret { get; set; }
+        public int stack { get; set; }
+        public String tokens { get; set; }
 
         public User(String username,String firstname,String lastname, String email, String password)
         {

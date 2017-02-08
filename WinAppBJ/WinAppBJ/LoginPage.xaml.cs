@@ -1,6 +1,7 @@
 ﻿using DataModel;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -55,13 +56,10 @@ namespace WinAppBJ
 
             User user = new User(email, password, secret);
 
-
             UserViewModel vm = new UserViewModel();
 
             vm.connectUser(user);
 
-            //var dialog = new MessageDialog(secret);
-            //await dialog.ShowAsync();
 
         }
     }
