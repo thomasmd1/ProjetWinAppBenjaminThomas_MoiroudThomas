@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>4C7059E7E5953DB6C2384DB29F0E970404FEDEAE6BCFFFBF2CCB7ED6DDAA6280</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>64D5A091DE5F135CE5C72FB40CC20D9ABD52982CFB6BF464B2D40D5A7A412777</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c9bcc8f4-c4b1-42a6-9b53-eb0e5a9617bd_1.0.0.0_x86__kwrge36c34jbp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c9bcc8f4-c4b1-42a6-9b53-eb0e5a9617bd_kwrge36c34jbp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c9bcc8f4-c4b1-42a6-9b53-eb0e5a9617bd</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-08T10:06:09.613</Modified>
+      <Modified>2017-02-09T20:05:48.507</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-08T10:06:08.727</Modified>
+      <Modified>2017-02-09T20:05:47.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,7 +498,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\DataModel\bin\x86\Debug\DataModel.dll">
       <PackagePath>DataModel.dll</PackagePath>
-      <Modified>2017-02-08T10:05:09.147</Modified>
+      <Modified>2017-02-09T19:03:59.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\Assets\BackgroundConnexion.jpg">
       <PackagePath>Assets\BackgroundConnexion.jpg</PackagePath>
@@ -544,7 +544,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.xr.xml">
       <PackagePath>WinAppBJ.xr.xml</PackagePath>
-      <Modified>2017-02-06T20:25:11.060</Modified>
+      <Modified>2017-02-09T20:03:09.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -553,11 +553,11 @@
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-08T10:05:11.995</Modified>
+      <Modified>2017-02-09T20:03:10.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\NewRepo3\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-08T10:06:09.608</Modified>
+      <Modified>2017-02-09T20:05:48.501</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

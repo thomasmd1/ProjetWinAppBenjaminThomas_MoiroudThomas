@@ -1,8 +1,10 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WinAppBJ.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +27,7 @@ namespace WinAppBJ
         public RoomPage()
         {
             this.InitializeComponent();
+            RoomViewModel rvm = (RoomViewModel)this.DataContext;
         }
     }
 }

@@ -132,19 +132,33 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "WinAppBJ.LoginPage";
+            _typeNameTable = new string[12];
+            _typeNameTable[0] = "WinAppBJ.GamePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "WinAppBJ.MainPage";
-            _typeNameTable[4] = "WinAppBJ.TestDeck";
+            _typeNameTable[3] = "WinAppBJ.LoginPage";
+            _typeNameTable[4] = "WinAppBJ.ViewModel.RoomViewModel";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "DataModel.Room";
+            _typeNameTable[7] = "System.Collections.Generic.List`1<DataModel.User>";
+            _typeNameTable[8] = "DataModel.User";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Int32";
+            _typeNameTable[11] = "WinAppBJ.RoomPage";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::WinAppBJ.LoginPage);
+            _typeTable = new global::System.Type[12];
+            _typeTable[0] = typeof(global::WinAppBJ.GamePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::WinAppBJ.MainPage);
-            _typeTable[4] = typeof(global::WinAppBJ.TestDeck);
+            _typeTable[3] = typeof(global::WinAppBJ.LoginPage);
+            _typeTable[4] = typeof(global::WinAppBJ.ViewModel.RoomViewModel);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::DataModel.Room);
+            _typeTable[7] = typeof(global::System.Collections.Generic.List<global::DataModel.User>);
+            _typeTable[8] = typeof(global::DataModel.User);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Int32);
+            _typeTable[11] = typeof(global::WinAppBJ.RoomPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +193,18 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_LoginPage() { return new global::WinAppBJ.LoginPage(); }
-        private object Activate_3_MainPage() { return new global::WinAppBJ.MainPage(); }
-        private object Activate_4_TestDeck() { return new global::WinAppBJ.TestDeck(); }
+        private object Activate_0_GamePage() { return new global::WinAppBJ.GamePage(); }
+        private object Activate_3_LoginPage() { return new global::WinAppBJ.LoginPage(); }
+        private object Activate_4_RoomViewModel() { return new global::WinAppBJ.ViewModel.RoomViewModel(); }
+        private object Activate_7_List() { return new global::System.Collections.Generic.List<global::DataModel.User>(); }
+        private object Activate_8_User() { return new global::DataModel.User(); }
+        private object Activate_11_RoomPage() { return new global::WinAppBJ.RoomPage(); }
+        private void VectorAdd_7_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::DataModel.User>)instance;
+            var newItem = (global::DataModel.User)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +216,9 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  WinAppBJ.LoginPage
+            case 0:   //  WinAppBJ.GamePage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LoginPage;
+                userType.Activator = Activate_0_GamePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -208,16 +231,64 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
                 xamlType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  WinAppBJ.MainPage
+            case 3:   //  WinAppBJ.LoginPage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  WinAppBJ.TestDeck
+            case 4:   //  WinAppBJ.ViewModel.RoomViewModel
+                userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_4_RoomViewModel;
+                userType.AddMemberName("Rooms");
+                userType.AddMemberName("Onlines");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  DataModel.Room
+                userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.Collections.Generic.List`1<DataModel.User>
+                userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_7_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  DataModel.User
+                userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_User;
+                userType.AddMemberName("username");
+                userType.AddMemberName("firstname");
+                userType.AddMemberName("lastname");
+                userType.AddMemberName("email");
+                userType.AddMemberName("password");
+                userType.AddMemberName("secret");
+                userType.AddMemberName("stack");
+                userType.AddMemberName("tokens");
+                xamlType = userType;
+                break;
+
+            case 9:   //  String
+                xamlType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Int32
+                xamlType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  WinAppBJ.RoomPage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_TestDeck;
+                userType.Activator = Activate_11_RoomPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -226,11 +297,175 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
         }
 
 
+        private object get_0_RoomViewModel_Rooms(object instance)
+        {
+            var that = (global::WinAppBJ.ViewModel.RoomViewModel)instance;
+            return that.Rooms;
+        }
+        private void set_0_RoomViewModel_Rooms(object instance, object Value)
+        {
+            var that = (global::WinAppBJ.ViewModel.RoomViewModel)instance;
+            that.Rooms = (global::DataModel.Room)Value;
+        }
+        private object get_1_RoomViewModel_Onlines(object instance)
+        {
+            var that = (global::WinAppBJ.ViewModel.RoomViewModel)instance;
+            return that.Onlines;
+        }
+        private void set_1_RoomViewModel_Onlines(object instance, object Value)
+        {
+            var that = (global::WinAppBJ.ViewModel.RoomViewModel)instance;
+            that.Onlines = (global::System.Collections.Generic.List<global::DataModel.User>)Value;
+        }
+        private object get_2_User_username(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.username;
+        }
+        private void set_2_User_username(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.username = (global::System.String)Value;
+        }
+        private object get_3_User_firstname(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.firstname;
+        }
+        private void set_3_User_firstname(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.firstname = (global::System.String)Value;
+        }
+        private object get_4_User_lastname(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.lastname;
+        }
+        private void set_4_User_lastname(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.lastname = (global::System.String)Value;
+        }
+        private object get_5_User_email(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.email;
+        }
+        private void set_5_User_email(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.email = (global::System.String)Value;
+        }
+        private object get_6_User_password(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.password;
+        }
+        private void set_6_User_password(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.password = (global::System.String)Value;
+        }
+        private object get_7_User_secret(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.secret;
+        }
+        private void set_7_User_secret(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.secret = (global::System.String)Value;
+        }
+        private object get_8_User_stack(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.stack;
+        }
+        private void set_8_User_stack(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.stack = (global::System.Int32)Value;
+        }
+        private object get_9_User_tokens(object instance)
+        {
+            var that = (global::DataModel.User)instance;
+            return that.tokens;
+        }
+        private void set_9_User_tokens(object instance, object Value)
+        {
+            var that = (global::DataModel.User)instance;
+            that.tokens = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "WinAppBJ.ViewModel.RoomViewModel.Rooms":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinAppBJ.ViewModel.RoomViewModel");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "Rooms", "DataModel.Room");
+                xamlMember.Getter = get_0_RoomViewModel_Rooms;
+                xamlMember.Setter = set_0_RoomViewModel_Rooms;
+                break;
+            case "WinAppBJ.ViewModel.RoomViewModel.Onlines":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinAppBJ.ViewModel.RoomViewModel");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "Onlines", "System.Collections.Generic.List`1<DataModel.User>");
+                xamlMember.Getter = get_1_RoomViewModel_Onlines;
+                xamlMember.Setter = set_1_RoomViewModel_Onlines;
+                break;
+            case "DataModel.User.username":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "username", "String");
+                xamlMember.Getter = get_2_User_username;
+                xamlMember.Setter = set_2_User_username;
+                break;
+            case "DataModel.User.firstname":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "firstname", "String");
+                xamlMember.Getter = get_3_User_firstname;
+                xamlMember.Setter = set_3_User_firstname;
+                break;
+            case "DataModel.User.lastname":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "lastname", "String");
+                xamlMember.Getter = get_4_User_lastname;
+                xamlMember.Setter = set_4_User_lastname;
+                break;
+            case "DataModel.User.email":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "email", "String");
+                xamlMember.Getter = get_5_User_email;
+                xamlMember.Setter = set_5_User_email;
+                break;
+            case "DataModel.User.password":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "password", "String");
+                xamlMember.Getter = get_6_User_password;
+                xamlMember.Setter = set_6_User_password;
+                break;
+            case "DataModel.User.secret":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "secret", "String");
+                xamlMember.Getter = get_7_User_secret;
+                xamlMember.Setter = set_7_User_secret;
+                break;
+            case "DataModel.User.stack":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "stack", "Int32");
+                xamlMember.Getter = get_8_User_stack;
+                xamlMember.Setter = set_8_User_stack;
+                break;
+            case "DataModel.User.tokens":
+                userType = (global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DataModel.User");
+                xamlMember = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlMember(this, "tokens", "String");
+                xamlMember.Getter = get_9_User_tokens;
+                xamlMember.Setter = set_9_User_tokens;
+                break;
+            }
             return xamlMember;
         }
     }

@@ -33,5 +33,9 @@ namespace DataModel
             this.password = password;
             this.secret = secret;
         }
+
+        public User()
+        {
+        }
     }
 }
