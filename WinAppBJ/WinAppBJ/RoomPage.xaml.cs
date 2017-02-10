@@ -24,8 +24,13 @@ namespace WinAppBJ
     {
         public RoomPage()
         {
-            OnNavigatedTo(e);
+            
             this.InitializeComponent();
+        }
+
+        private void OnclickDeconnect(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

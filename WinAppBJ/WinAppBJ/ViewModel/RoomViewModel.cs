@@ -44,5 +44,20 @@ namespace WinAppBJ.ViewModel
                 }
             }
         }
-    }
+
+        public async void DeconnectUser(User user)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://demo.comte.re");
+
+                var json = JsonConvert.SerializeObject(user.email);
+                var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync("/api/auth/logout", itemJson);
+                if (response.IsSuccessStatusCode)
+                {
+                    var dialog = new MessageDialog("Vous avez été déconnecté");
+                    await dialog.ShowAsync();
+                }
+            }
 }

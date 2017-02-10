@@ -10,17 +10,22 @@
     <Grid Background="Gray">
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
+            <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#33F70000" Click="OnclickDeconnect"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
             <TextBlock Text="Room" HorizontalAlignment="Center"></TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="2">
             <TextBlock Text="Players online" HorizontalAlignment="Center"></TextBlock>
         </StackPanel>
+        
 
     </Grid>
 </Page>
