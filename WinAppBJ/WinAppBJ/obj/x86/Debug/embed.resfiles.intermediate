@@ -1,4 +1,4 @@
 App.xbf
-GamePage.xbf
-LoginPage.xbf
-RoomPage.xbf
+View\GamePage.xbf
+View\LoginPage.xbf
+View\RoomPage.xbf
