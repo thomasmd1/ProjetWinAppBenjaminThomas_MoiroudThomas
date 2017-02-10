@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="Gray">
-
+        <Frame Name="Secondframe"></Frame>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>

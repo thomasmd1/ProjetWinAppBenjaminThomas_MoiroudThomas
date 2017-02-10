@@ -133,18 +133,18 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[5];
-            _typeNameTable[0] = "WinAppBJ.LoginPage";
+            _typeNameTable[0] = "WinAppBJ.GamePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "WinAppBJ.MainPage";
-            _typeNameTable[4] = "WinAppBJ.TestDeck";
+            _typeNameTable[3] = "WinAppBJ.LoginPage";
+            _typeNameTable[4] = "WinAppBJ.RoomPage";
 
             _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::WinAppBJ.LoginPage);
+            _typeTable[0] = typeof(global::WinAppBJ.GamePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::WinAppBJ.MainPage);
-            _typeTable[4] = typeof(global::WinAppBJ.TestDeck);
+            _typeTable[3] = typeof(global::WinAppBJ.LoginPage);
+            _typeTable[4] = typeof(global::WinAppBJ.RoomPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +179,9 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_LoginPage() { return new global::WinAppBJ.LoginPage(); }
-        private object Activate_3_MainPage() { return new global::WinAppBJ.MainPage(); }
-        private object Activate_4_TestDeck() { return new global::WinAppBJ.TestDeck(); }
+        private object Activate_0_GamePage() { return new global::WinAppBJ.GamePage(); }
+        private object Activate_3_LoginPage() { return new global::WinAppBJ.LoginPage(); }
+        private object Activate_4_RoomPage() { return new global::WinAppBJ.RoomPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +193,9 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  WinAppBJ.LoginPage
+            case 0:   //  WinAppBJ.GamePage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LoginPage;
+                userType.Activator = Activate_0_GamePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -208,16 +208,16 @@ namespace WinAppBJ.WinAppBJ_XamlTypeInfo
                 xamlType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  WinAppBJ.MainPage
+            case 3:   //  WinAppBJ.LoginPage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  WinAppBJ.TestDeck
+            case 4:   //  WinAppBJ.RoomPage
                 userType = new global::WinAppBJ.WinAppBJ_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_TestDeck;
+                userType.Activator = Activate_4_RoomPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

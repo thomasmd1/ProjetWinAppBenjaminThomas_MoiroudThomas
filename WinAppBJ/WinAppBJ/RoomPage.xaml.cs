@@ -24,6 +24,7 @@ namespace WinAppBJ
     {
         public RoomPage()
         {
+            OnNavigatedTo(e);
             this.InitializeComponent();
         }
     }

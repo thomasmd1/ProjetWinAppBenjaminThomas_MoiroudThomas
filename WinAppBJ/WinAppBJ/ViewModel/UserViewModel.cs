@@ -68,6 +68,8 @@ namespace WinAppBJ.ViewModels
                     user.email = resultsUser["email"].ToString();
                     user.stack = int.Parse(resultsUser["stack"].ToString());
 
+                    
+
                     var dialog = new MessageDialog(user.tokens);
                     await dialog.ShowAsync();
                 }
@@ -81,6 +83,7 @@ namespace WinAppBJ.ViewModels
 
 
             }
+            
         }
     }
 }

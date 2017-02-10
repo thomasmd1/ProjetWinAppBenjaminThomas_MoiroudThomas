@@ -38,5 +38,31 @@ namespace WinAppBJ.ViewModel
                 ////    await dialog.ShowAsync();
             }
         }
+        public async void getOpenedTable(User user)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://demo.comte.re");
+
+                var json = JsonConvert.SerializeObject(new { user = user });
+                var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync("/api/table/opened", itemJson);
+                if (response.IsSuccessStatusCode)
+                {
+                    var dialog = new MessageDialog("l'utilisateur a bien été ajouté");
+                    await dialog.ShowAsync();
+
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Sa marche pas !!", json);
+                    await dialog.ShowAsync();
+
+                }
+
+                ////    var dialog = new MessageDialog(json);
+                ////    await dialog.ShowAsync();
+            }
+        }
     }
 }
