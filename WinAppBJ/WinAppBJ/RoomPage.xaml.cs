@@ -25,16 +25,13 @@ namespace WinAppBJ
     {
         public RoomPage()
         {
-            RoomViewModel vm = new RoomViewModel();
-
-            string items = vm.GetPlayerOnline();
+           
             this.InitializeComponent();
         }
 
         private void OnclickDeconnect(object sender, RoutedEventArgs e)
         {
-            RoomViewModel vm = new RoomViewModel();
-            vm.DeconnectUser(user.email);
+            
         }
 
 
