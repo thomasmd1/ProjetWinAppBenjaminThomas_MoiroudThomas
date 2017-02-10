@@ -41,6 +41,7 @@
                 <Button x:Name="buttonStart" Content="START" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
                 <Button x:Name="buttonEnd" Content="END" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
                 <Button x:Name="buttonHit" Content="HIT" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
+                <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Left" Width="140" Height="80" Margin="5" Background="#7FFF0000"/>
             </StackPanel>
 
             <StackPanel Margin="15">
