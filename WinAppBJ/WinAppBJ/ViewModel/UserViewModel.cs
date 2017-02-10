@@ -10,12 +10,17 @@ using System.Windows;
 using Windows.UI.Popups;
 using Windows.Data.Json;
 using Newtonsoft.Json.Linq;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml;
 
 namespace WinAppBJ.ViewModels
 {
+    
+
     class UserViewModel
     {
 
+        Frame actualFrame { get { return Window.Current.Content as Frame; } }
         public async void addNewUser(User user)
         {
             using (var client = new HttpClient())
@@ -45,6 +50,8 @@ namespace WinAppBJ.ViewModels
 
         public async void connectUser(User user)
         {
+            
+
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://demo.comte.re");
@@ -68,8 +75,8 @@ namespace WinAppBJ.ViewModels
                     user.email = resultsUser["email"].ToString();
                     user.stack = int.Parse(resultsUser["stack"].ToString());
 
-                    
 
+                    actualFrame.Navigate(typeof(RoomPage));
                     var dialog = new MessageDialog(user.tokens);
                     await dialog.ShowAsync();
                 }

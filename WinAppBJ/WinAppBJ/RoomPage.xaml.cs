@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WinAppBJ.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,13 +25,18 @@ namespace WinAppBJ
     {
         public RoomPage()
         {
-            
+            RoomViewModel vm = new RoomViewModel();
+
+            string items = vm.GetPlayerOnline();
             this.InitializeComponent();
         }
 
         private void OnclickDeconnect(object sender, RoutedEventArgs e)
         {
-
+            RoomViewModel vm = new RoomViewModel();
+            vm.DeconnectUser(user.email);
         }
+
+
     }
 }

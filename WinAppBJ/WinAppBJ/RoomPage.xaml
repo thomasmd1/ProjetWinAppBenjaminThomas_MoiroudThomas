@@ -20,7 +20,8 @@
         </StackPanel>
         <StackPanel Grid.Column="1">
             <TextBlock Text="Room" HorizontalAlignment="Center"></TextBlock>
-            <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox"/>
+            <ListBox x:Name="ltbRoom" Height="100"/>
+
         </StackPanel>
 
         <StackPanel Grid.Column="2">

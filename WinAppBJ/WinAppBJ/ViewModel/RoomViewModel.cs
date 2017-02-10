@@ -1,5 +1,6 @@
 ﻿using DataModel;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,15 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace WinAppBJ.ViewModel
 {
     class RoomViewModel
     {
+        Frame actualFrame { get { return Window.Current.Content as Frame; } }
+
         public async void GetPlayerOnline()
         {
             using (var client = new HttpClient())
@@ -25,6 +30,9 @@ namespace WinAppBJ.ViewModel
                 if (response.IsSuccessStatusCode)
                 {
                     string res = await response.Content.ReadAsStringAsync();
+
+                    var jobject = JObject.Parse(res);
+
                 }
             }
         }
@@ -58,6 +66,10 @@ namespace WinAppBJ.ViewModel
                 {
                     var dialog = new MessageDialog("Vous avez été déconnecté");
                     await dialog.ShowAsync();
+
+                    actualFrame.Navigate(typeof(LoginPage));
+                    
+
                 }
             }
         }
