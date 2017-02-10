@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace WinAppBJ
         {
            
             this.InitializeComponent();
+            RoomViewModel rvm = (RoomViewModel)this.DataContext;
         }
 
         private void OnclickDeconnect(object sender, RoutedEventArgs e)
