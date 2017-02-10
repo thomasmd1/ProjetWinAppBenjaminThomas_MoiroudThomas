@@ -60,4 +60,6 @@ namespace WinAppBJ.ViewModel
                     await dialog.ShowAsync();
                 }
             }
+        }
+    }
 }
