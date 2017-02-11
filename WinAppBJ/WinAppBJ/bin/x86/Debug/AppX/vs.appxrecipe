@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-11T16:14:08.582</Modified>
+      <Modified>2017-02-11T16:18:12.393</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.exe">
       <PackagePath>entrypoint\WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-11T16:14:07.790</Modified>
+      <Modified>2017-02-11T16:18:11.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -560,7 +560,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\WinAppBJ.xr.xml">
       <PackagePath>WinAppBJ.xr.xml</PackagePath>
-      <Modified>2017-02-11T16:08:13.709</Modified>
+      <Modified>2017-02-11T16:18:10.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -569,11 +569,11 @@
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-11T16:09:24.685</Modified>
+      <Modified>2017-02-11T16:18:12.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\WinAppBJ\bin\x86\Debug\Core\WinAppBJ.exe">
       <PackagePath>WinAppBJ.exe</PackagePath>
-      <Modified>2017-02-11T16:14:08.578</Modified>
+      <Modified>2017-02-11T16:18:12.388</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
