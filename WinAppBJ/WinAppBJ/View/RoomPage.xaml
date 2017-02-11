@@ -21,13 +21,23 @@
         </StackPanel>
         <StackPanel Grid.Column="1">
             <TextBlock Text="Room" HorizontalAlignment="Center"></TextBlock>
-            <ListBox x:Name="ltbRoom" Height="100"/>
-
+            <ListBox ItemsSource="{Binding Tables}" Background="Gray" Width="150">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock>
+                                    <Run Text="{Binding Path=id}"></Run>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
         </StackPanel>
 
         <StackPanel Grid.Column="2">
             <TextBlock Text="Players online" HorizontalAlignment="Center"></TextBlock>
-            <ListBox ItemsSource="{Binding}" Background="Gray" Width="150">
+            <ListBox ItemsSource="{Binding Users}" Background="Gray" Width="150">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
