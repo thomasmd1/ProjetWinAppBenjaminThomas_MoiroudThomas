@@ -28,7 +28,9 @@ namespace WinAppBJ
         {
            
             this.InitializeComponent();
-            RoomViewModel rvm = (RoomViewModel)this.DataContext;
+            RoomViewModel rvm = new RoomViewModel();
+            rvm.getPlayerOnline();
+            
         }
 
         private void OnclickDeconnect(object sender, RoutedEventArgs e)

@@ -7,11 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:WinAppBJ.ViewModel"
     mc:Ignorable="d">
-
-    <Page.DataContext>
-        <vm:RoomViewModel></vm:RoomViewModel>
-    </Page.DataContext>
-    
     
     <Grid Background="Gray">
 
@@ -32,11 +27,15 @@
 
         <StackPanel Grid.Column="2">
             <TextBlock Text="Players online" HorizontalAlignment="Center"></TextBlock>
-            <ListBox ItemsSource="{Binding Onlines}">
+            <ListBox ItemsSource="{Binding}" Background="Gray" Width="150">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Path=email}" />
+                            <TextBlock>
+                                    <Run Text="{Binding Path=firstname}"></Run>
+                                    <Run Text=" "></Run>
+                                    <Run Text="{Binding Path=lastname}"></Run>
+                            </TextBlock>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

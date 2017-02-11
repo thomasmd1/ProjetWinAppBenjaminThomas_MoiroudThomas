@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Onlines" />
-    <RootPropertyPathName Name="email" />
+    <RootPropertyPathName Name="lastname" />
+    <RootPropertyPathName Name="firstname" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -10,7 +10,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
-      <RootProperty Name="DataContext" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -72,9 +71,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox" />
     <RootType FullName="WinAppBJ.LoginPage" />
-    <RootType FullName="WinAppBJ.ViewModel.RoomViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Width" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Height" />
     </RootType>
@@ -83,6 +83,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="WinAppBJ.RoomPage" />
   </Roots.RootTypes>
