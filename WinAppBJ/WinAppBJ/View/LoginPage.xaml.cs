@@ -33,6 +33,7 @@ namespace WinAppBJ
 
         private void OnClickAddUser(object sender, RoutedEventArgs e)
         {
+
             string username = txbAddUsername.Text;
             string firstname = txbAddFirstname.Text;
             string lastname = txbAddLastname.Text;

@@ -19,6 +19,24 @@ namespace WinAppBJ.ViewModels
 
     class UserViewModel
     {
+
+        //private Api _api;
+        //public Api Api
+        //{
+        //    get { return _api; }
+        //    set
+        //    {
+        //        SetProperty<Api>(ref this._api, value);
+        //    }
+        //}
+
+        //private void SetProperty<T>(ref T _api, T value)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+
+
         //Permet de définir dans quelle Frame on se situe
         Frame actualFrame { get { return Window.Current.Content as Frame; } }
 
@@ -77,6 +95,9 @@ namespace WinAppBJ.ViewModels
                     user.lastname = resultsUser["lastname"].ToString();
                     user.email = resultsUser["email"].ToString();
                     user.stack = int.Parse(resultsUser["stack"].ToString());
+
+                    //this.Api = new Api();
+                    //this.Api = this.Api = JsonConvert.DeserializeObject<Api>(res);
 
                     //Redirection de l'utilisateur vers la page "RoomPage"
                     actualFrame.Navigate(typeof(RoomPage));

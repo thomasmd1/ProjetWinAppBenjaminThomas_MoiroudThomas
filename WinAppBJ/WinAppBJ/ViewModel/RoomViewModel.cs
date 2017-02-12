@@ -23,6 +23,22 @@ namespace WinAppBJ.ViewModel
         public Table Tables { get; set; }
         public List<Table> Free { get; set; }
 
+        //private Api _api;
+
+        //public Api Api
+        //{
+        //    get { return _api; }
+        //    set
+        //    {
+        //        SetProperty(ref this._api, value);
+        //    }
+        //}
+
+        //private void SetProperty(ref Api _api, Api value)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         public RoomViewModel()
         {
             Onlines = new List<User>();
@@ -127,6 +143,7 @@ namespace WinAppBJ.ViewModel
                 HttpResponseMessage response = await client.PostAsync("/api/auth/logout", itemJson);
                 if (response.IsSuccessStatusCode)
                 {
+
                     var dialog = new MessageDialog("Vous avez été déconnecté");
                     await dialog.ShowAsync();
 

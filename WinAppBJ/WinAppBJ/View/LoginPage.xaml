@@ -9,7 +9,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/BackgroundConnexion.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/BackgroundConnexion.jpg"/>
         </Grid.Background>
 
         <Grid.RowDefinitions>

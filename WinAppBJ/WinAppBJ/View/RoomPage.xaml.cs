@@ -24,6 +24,7 @@ namespace WinAppBJ
     /// </summary>
     public sealed partial class RoomPage : Page
     {
+        RoomViewModel rvm = new RoomViewModel();
         public RoomPage()
         {
            
