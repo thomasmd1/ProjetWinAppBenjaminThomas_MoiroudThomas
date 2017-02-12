@@ -19,7 +19,7 @@
 
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock FontSize="36">Binvenue</TextBlock>
+            <TextBlock FontSize="36">Bienvenue</TextBlock>
             <TextBlock FontSize="36">BlackJack Game</TextBlock>
         </StackPanel>
 

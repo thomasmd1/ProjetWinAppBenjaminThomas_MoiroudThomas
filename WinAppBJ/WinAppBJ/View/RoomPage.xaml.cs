@@ -28,17 +28,20 @@ namespace WinAppBJ
         {
             this.InitializeComponent();
         }
+        private User user;
 
         //Appel de la méthode pour deconnecter l'utilsateur
         private void OnclickDeconnect(object sender, RoutedEventArgs e)
         {
-            
+            RoomViewModel rvm = new RoomViewModel(user);
+            rvm.DeconnectUser();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var parameter = e.Parameter as User;
             RoomViewModel rvm = new RoomViewModel(parameter);
+            user = parameter;
         }
     }
 }

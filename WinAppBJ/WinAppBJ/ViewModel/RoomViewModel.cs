@@ -53,7 +53,7 @@ namespace WinAppBJ.ViewModel
             getPlayerOnline();
             //GetOpenedTable();
         }
-
+        
         public async void getPlayerOnline()
         {
             using (var client = new HttpClient())
@@ -138,7 +138,7 @@ namespace WinAppBJ.ViewModel
             }
         }
         //Call Api permettant la déconnexion de l'utilisateur
-        public async void DeconnectUser(User user)
+        public async void DeconnectUser()
         {
             using (var client = new HttpClient())
             {
@@ -146,6 +146,7 @@ namespace WinAppBJ.ViewModel
 
                 var json = JsonConvert.SerializeObject(user.email);
                 var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
+                client.DefaultRequestHeaders.Add("authorization", "Bearer " + this.user.tokens);
                 HttpResponseMessage response = await client.PostAsync("/api/auth/logout", itemJson);
                 if (response.IsSuccessStatusCode)
                 {
@@ -157,6 +158,11 @@ namespace WinAppBJ.ViewModel
                     actualFrame.Navigate(typeof(LoginPage));
 
 
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Failed");
+                    await dialog.ShowAsync();
                 }
             }
         }
