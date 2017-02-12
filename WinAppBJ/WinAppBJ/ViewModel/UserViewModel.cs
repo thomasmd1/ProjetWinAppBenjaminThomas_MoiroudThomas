@@ -54,7 +54,7 @@ namespace WinAppBJ.ViewModels
                 {
                     var dialog = new MessageDialog("l'utilisateur a bien été ajouté");
                     await dialog.ShowAsync();
-
+                    actualFrame.Navigate(typeof(RoomPage), user);
                 }
                 else
                 {
@@ -100,7 +100,7 @@ namespace WinAppBJ.ViewModels
                     //this.Api = this.Api = JsonConvert.DeserializeObject<Api>(res);
 
                     //Redirection de l'utilisateur vers la page "RoomPage"
-                    actualFrame.Navigate(typeof(RoomPage));
+                    actualFrame.Navigate(typeof(RoomPage),user);
 
                     //var dialog = new MessageDialog(user.tokens);
                     //await dialog.ShowAsync();

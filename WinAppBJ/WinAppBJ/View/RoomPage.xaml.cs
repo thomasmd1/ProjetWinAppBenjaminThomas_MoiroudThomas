@@ -24,12 +24,9 @@ namespace WinAppBJ
     /// </summary>
     public sealed partial class RoomPage : Page
     {
-        RoomViewModel rvm = new RoomViewModel();
         public RoomPage()
         {
-           
             this.InitializeComponent();
-            RoomViewModel rvm = new RoomViewModel();
         }
 
         //Appel de la méthode pour deconnecter l'utilsateur
@@ -38,6 +35,10 @@ namespace WinAppBJ
             
         }
 
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var parameter = e.Parameter as User;
+            RoomViewModel rvm = new RoomViewModel(parameter);
+        }
     }
 }

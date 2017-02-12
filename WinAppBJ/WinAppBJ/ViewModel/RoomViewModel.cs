@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace WinAppBJ.ViewModel
 {
@@ -22,6 +23,8 @@ namespace WinAppBJ.ViewModel
         public List<User> Onlines { get; set; }
         public Table Tables { get; set; }
         public List<Table> Free { get; set; }
+
+        private User user;
 
         //private Api _api;
 
@@ -39,8 +42,11 @@ namespace WinAppBJ.ViewModel
         //    throw new NotImplementedException();
         //}
 
-        public RoomViewModel()
+        public RoomViewModel(User u)
         {
+            this.user = new User();
+            this.user = u;
+
             Onlines = new List<User>();
             Free = new List<Table>();
             Room = new Room();
@@ -54,7 +60,7 @@ namespace WinAppBJ.ViewModel
             {
                 client.BaseAddress = new Uri("http://demo.comte.re");
                 client.DefaultRequestHeaders.Add("accept", "application/json");
-                client.DefaultRequestHeaders.Add("authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJiNWE0ZDNiYjljZGRlOTI0Mjc1MWUwNTRhOTJkNWQ4Y2NkZGMwMmYxODhlMTZkMGExMDBjNjAzMWVhN2QzZTAxNTA2NGE1NTRiOTc0ZmI4In0.eyJhdWQiOiJ0ZXN0QHlub3YuY29tIiwianRpIjoiYmI1YTRkM2JiOWNkZGU5MjQyNzUxZTA1NGE5MmQ1ZDhjY2RkYzAyZjE4OGUxNmQwYTEwMGM2MDMxZWE3ZDNlMDE1MDY0YTU1NGI5NzRmYjgiLCJpYXQiOjE0ODY4MjYyMjYsIm5iZiI6MTQ4NjgyNjIyNiwiZXhwIjoxNTE4MzYyMjI2LCJzdWIiOiIyNCIsInNjb3BlcyI6WyIqIl19.Tn2YvRYID2WikVK8BpA2dMb8iqUndDmFpNfJ4_oWJmhmY-ztNM6Fx8hnzJgKiVRB9WTq2P5ohtlb-FjHq5W9rnqcm8PyuujIvGvw-yhXdDqRkI6IPg8IYnYUhSiQ0vBjWnAzahZWWhTY5AnqAAp-6W1b2qCkmnSttqCdJObaC8i12o8BmLYjx5jaP4Odh2VPt4MY5XP7l1Rq4svHBc3OQ6MPgd6d2Kvx3I-Ox-7LEiksKgDnsjQsVdznNxzObQ3F4ebVwFvhchcctRstEJGiy6hZo2UkAuRL0zNabwWE8Qnut-rXys59O6WzkLsHJ_p3B9ZR5SK79HIeFZlSBd1-XfFtc1fRVY_wOXZXhONoBgQKzWRB-FQj3Ij0dxRNUR4P1t4RyRK1PNKijHfFuohTGm4DEEyJNS3BPSJE9McdmQ8pZxk_O4s4cM2RYfwpZQMiCj5w_MAdl6wLqPlz3WTVlo4pofOT05tiR_U-seNaUXU1aGu5vgNP4ByadF80irqb-sDaO7FTzJZU2vgBGa1QvYuw9fpVEP8HHlWsdn63HWU8lmhAC7Rqj__t7vo_rno0ptiENhy9nTBOlUB-nezWaYibs1UcTkv9TYjj5IoxTaRXmTwv5Fm4wl-gg26nzCbUkkmPbUK6GB1fHe1gUv6ByKn00jNvIAr0FaEcxB3d0Gg");
+                client.DefaultRequestHeaders.Add("authorization", "Bearer "+ this.user.tokens);
                 
                 HttpResponseMessage response = await client.GetAsync("/api/user/connected");
                 if (response.IsSuccessStatusCode)
@@ -98,7 +104,7 @@ namespace WinAppBJ.ViewModel
             {
                 client.BaseAddress = new Uri("http://demo.comte.re");
                 client.DefaultRequestHeaders.Add("accept", "application/json");
-                client.DefaultRequestHeaders.Add("authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJiNWE0ZDNiYjljZGRlOTI0Mjc1MWUwNTRhOTJkNWQ4Y2NkZGMwMmYxODhlMTZkMGExMDBjNjAzMWVhN2QzZTAxNTA2NGE1NTRiOTc0ZmI4In0.eyJhdWQiOiJ0ZXN0QHlub3YuY29tIiwianRpIjoiYmI1YTRkM2JiOWNkZGU5MjQyNzUxZTA1NGE5MmQ1ZDhjY2RkYzAyZjE4OGUxNmQwYTEwMGM2MDMxZWE3ZDNlMDE1MDY0YTU1NGI5NzRmYjgiLCJpYXQiOjE0ODY4MjYyMjYsIm5iZiI6MTQ4NjgyNjIyNiwiZXhwIjoxNTE4MzYyMjI2LCJzdWIiOiIyNCIsInNjb3BlcyI6WyIqIl19.Tn2YvRYID2WikVK8BpA2dMb8iqUndDmFpNfJ4_oWJmhmY-ztNM6Fx8hnzJgKiVRB9WTq2P5ohtlb-FjHq5W9rnqcm8PyuujIvGvw-yhXdDqRkI6IPg8IYnYUhSiQ0vBjWnAzahZWWhTY5AnqAAp-6W1b2qCkmnSttqCdJObaC8i12o8BmLYjx5jaP4Odh2VPt4MY5XP7l1Rq4svHBc3OQ6MPgd6d2Kvx3I-Ox-7LEiksKgDnsjQsVdznNxzObQ3F4ebVwFvhchcctRstEJGiy6hZo2UkAuRL0zNabwWE8Qnut-rXys59O6WzkLsHJ_p3B9ZR5SK79HIeFZlSBd1-XfFtc1fRVY_wOXZXhONoBgQKzWRB-FQj3Ij0dxRNUR4P1t4RyRK1PNKijHfFuohTGm4DEEyJNS3BPSJE9McdmQ8pZxk_O4s4cM2RYfwpZQMiCj5w_MAdl6wLqPlz3WTVlo4pofOT05tiR_U-seNaUXU1aGu5vgNP4ByadF80irqb-sDaO7FTzJZU2vgBGa1QvYuw9fpVEP8HHlWsdn63HWU8lmhAC7Rqj__t7vo_rno0ptiENhy9nTBOlUB-nezWaYibs1UcTkv9TYjj5IoxTaRXmTwv5Fm4wl-gg26nzCbUkkmPbUK6GB1fHe1gUv6ByKn00jNvIAr0FaEcxB3d0Gg");
+                client.DefaultRequestHeaders.Add("authorization", "Bearer " + this.user.tokens);
 
                 HttpResponseMessage response = await client.GetAsync("/api/table/opened");
                 if (response.IsSuccessStatusCode)
@@ -154,6 +160,8 @@ namespace WinAppBJ.ViewModel
                 }
             }
         }
+
+        
     }
 }
 
