@@ -11,6 +11,7 @@ namespace DataModel
         public List<User> Users { get; set; }
         public List<Table> Tables { get; set; }
 
+        //Connstructeur Room
         public Room()
         {
             this.Users = new List<User>();

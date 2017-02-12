@@ -106,7 +106,6 @@
       <DependentUpon>RoomPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\ConvertToMD5.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\RoomViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
   </ItemGroup>

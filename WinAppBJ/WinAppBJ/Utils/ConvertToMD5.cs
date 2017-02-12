@@ -10,18 +10,18 @@ namespace WinAppBJ.Utils
     class ConvertToMD5
     {
 
-        static public string EncodeTo64(string input)
+        static public string EncodeToMD5AndB64(string password)
         {
            
-            //encode en MD5
+            //Conversion du mot de passe en MD5 
             MD5 md5 = System.Security.Cryptography.MD5.Create();
 
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(password);
 
             byte[] hash = md5.ComputeHash(inputBytes);
 
             StringBuilder sb = new StringBuilder();
-
+            //Ici on parcourt chaque caractère du mot de passe
             for (int i = 0; i < hash.Length; i++)
 
             {
@@ -30,7 +30,7 @@ namespace WinAppBJ.Utils
 
             
 
-            //Encode le password en 64
+            //Conversion du mot de passe en Base 64
             var valueB64 = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
             return System.Convert.ToBase64String(valueB64);
 

@@ -47,6 +47,7 @@ namespace WinAppBJ.ViewModel
                     var jobject = JObject.Parse(res);
                     var resultsUser = jobject["users"];
 
+                    //Parcourt du résultat obtenus apres le call Api.
                     for (int i = 0; i < resultsUser.Count(); i++)
                     {
                         var item = resultsUser.ElementAt(i);
@@ -55,12 +56,14 @@ namespace WinAppBJ.ViewModel
                             firstname = item["firstname"].ToString(),
                             lastname = item["lastname"].ToString()
                         };
+                        //On récupère le firstname et lastname puis on les ajoutes à la liste Online
                         Onlines.Add(u);
                     }
 
                     //var dialog = new MessageDialog(resultsUser.ToString(), "Passed");
                     //await dialog.ShowAsync();
                     Room.Users = Onlines;
+                    //Redirection vers la page Room
                     actualFrame.DataContext = Room;
                 }
                 else
@@ -88,6 +91,7 @@ namespace WinAppBJ.ViewModel
                     var jobject = JObject.Parse(res);
                     var resultsTables = jobject["tables"];
 
+                    //Parcourt du résultat obtenus apres le call Api.
                     for (int i = 0; i < resultsTables.Count(); i++)
                     {
                         var item = resultsTables.ElementAt(i);
@@ -95,6 +99,7 @@ namespace WinAppBJ.ViewModel
                         {
                             var id = item["id"];
                         };
+                        //On récupère le firstname et lastname puis on les ajoutes à la liste Online
                         Free.Add(t);
                         
                     }
@@ -110,7 +115,7 @@ namespace WinAppBJ.ViewModel
                 }
             }
         }
-
+        //Call Api permettant la déconnexion de l'utilisateur
         public async void DeconnectUser(User user)
         {
             using (var client = new HttpClient())
@@ -125,6 +130,7 @@ namespace WinAppBJ.ViewModel
                     var dialog = new MessageDialog("Vous avez été déconnecté");
                     await dialog.ShowAsync();
 
+                    //Redirection vers la page "LoginPage"
                     actualFrame.Navigate(typeof(LoginPage));
 
 

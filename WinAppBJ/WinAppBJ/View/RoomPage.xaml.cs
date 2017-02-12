@@ -31,6 +31,7 @@ namespace WinAppBJ
             RoomViewModel rvm = new RoomViewModel();
         }
 
+        //Appel de la méthode pour deconnecter l'utilsateur
         private void OnclickDeconnect(object sender, RoutedEventArgs e)
         {
             

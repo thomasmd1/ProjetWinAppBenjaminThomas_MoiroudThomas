@@ -15,6 +15,7 @@ namespace DataModel
             CreateDeck();
         }
 
+        //Création du deck de carte
         public void CreateDeck()
         {
             Cards = new List<Card>();
@@ -33,6 +34,7 @@ namespace DataModel
             }
         }
 
+        //Mélange des cartes
         public List<Card> Shuffle(List<Card> deck)
         {
             return deck;

@@ -19,13 +19,16 @@
         <StackPanel Grid.Column="0">
             <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#33F70000" Click="OnclickDeconnect"/>
         </StackPanel>
+        <!-- Affichage des Tables Libres -->
         <StackPanel Grid.Column="1">
             <TextBlock Text="Room" HorizontalAlignment="Center"></TextBlock>
+            <!-- Binding des tables en mode Twoway -->
             <ListBox ItemsSource="{Binding Tables,Mode=TwoWay}" Background="Gray" Width="150">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock>
+                                    <!-- On affiche L'id des tables -->
                                     <Run Text="{Binding Path=id}"></Run>
                             </TextBlock>
                         </StackPanel>
@@ -36,14 +39,18 @@
         </StackPanel>
 
         <StackPanel Grid.Column="2">
+            <!-- Affichage des Joureurs en ligne -->
             <TextBlock Text="Players online" HorizontalAlignment="Center"></TextBlock>
+            <!-- ABinding des Users Online en mode Twoway -->
             <ListBox ItemsSource="{Binding Users,Mode=TwoWay}" Background="Gray" Width="150">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock>
+                                    <!-- Affichage des Firstname -->
                                     <Run Text="{Binding Path=firstname}"></Run>
                                     <Run Text=" "></Run>
+                                    <!-- Affichage des lastName -->
                                     <Run Text="{Binding Path=lastname}"></Run>
                             </TextBlock>
                         </StackPanel>

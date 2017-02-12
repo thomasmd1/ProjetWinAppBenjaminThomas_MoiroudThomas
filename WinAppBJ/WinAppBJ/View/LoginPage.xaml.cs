@@ -39,10 +39,12 @@ namespace WinAppBJ
             string email = txbAddEmail.Text;
             string password = txbAddPassword.Password;
 
+            // Création d'un nouvel utilisateur avec en paramètre les champs renseigné par l'utilisateur
             User user = new User(username, firstname, lastname, email, password);
 
             UserViewModel vm = new UserViewModel();
 
+            //Appel de la méthode addUser
             vm.addNewUser(user);
 
 
@@ -52,12 +54,13 @@ namespace WinAppBJ
         {
             string email = txbEmail.Text;
             string password = passwordConnection.Password;
-            string secret = Utils.ConvertToMD5.EncodeTo64(password);
+            //Conversion du mot de passe en MD5 
+            string secret = Utils.ConvertToMD5.EncodeToMD5AndB64(password);
 
             User user = new User(email, password, secret);
 
             UserViewModel vm = new UserViewModel();
-
+            //Appel de la méthode permettant à l'utilisateur de se connecter
             vm.connectUser(user);
 
 
