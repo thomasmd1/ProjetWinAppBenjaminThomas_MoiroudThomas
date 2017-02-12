@@ -76,7 +76,7 @@ namespace WinAppBJ.ViewModels
                 client.BaseAddress = new Uri("http://demo.comte.re");
 
                 //Converssion des information de l'utilisateur au format Json 
-                var json = JsonConvert.SerializeObject(new { user = user });
+                var json = JsonConvert.SerializeObject(user);
                 var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync("/api/auth/login",itemJson);
                 if (response.IsSuccessStatusCode)
@@ -109,7 +109,7 @@ namespace WinAppBJ.ViewModels
                 {
                     //var res = await response.Content.ReadAsStringAsync();
 
-                    var dialog = new MessageDialog("Connexion refuse");
+                    var dialog = new MessageDialog(json,"Connexion refuse");
                     await dialog.ShowAsync();
 
                 }
