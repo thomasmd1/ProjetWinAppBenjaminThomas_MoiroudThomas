@@ -67,10 +67,11 @@
                 <RadioButton>75 $</RadioButton>
                 <RadioButton>100 $</RadioButton>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Margin="15">
                 <TextBlock>Stack</TextBlock>
-                <TextBlock>
+                <TextBlock FontSize="16">
                     <Run Text="{Binding Path=stack}"></Run>
+                    <Run>$</Run>
                 </TextBlock>
             </StackPanel>
         </StackPanel>

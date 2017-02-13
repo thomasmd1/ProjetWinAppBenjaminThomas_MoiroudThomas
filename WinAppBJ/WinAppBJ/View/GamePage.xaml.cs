@@ -29,14 +29,12 @@ namespace WinAppBJ
         public GamePage()
         {
             this.InitializeComponent();
-            this.DataContext = user;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var parameter = e.Parameter as User;
-            RoomViewModel rvm = new RoomViewModel(parameter);
-            user = parameter;
+            this.DataContext = parameter;
         }
 
         private void OnclickDeconnect(object sender, RoutedEventArgs e)

@@ -34,9 +34,9 @@ namespace WinAppBJ.ViewModels
                 HttpResponseMessage response = await client.PostAsync("/api/auth/register", itemJson);
                 if (response.IsSuccessStatusCode)
                 {
-                    var dialog = new MessageDialog("l'utilisateur a bien été ajouté");
+                    var dialog = new MessageDialog("l'utilisateur a bien été ajouté, vous pouvez vous connecter avec l'adresse email "+user.email);
                     await dialog.ShowAsync();
-                    actualFrame.Navigate(typeof(RoomPage), user);
+                    //actualFrame.Navigate(typeof(RoomPage), user);
                 }
                 else
                 {
@@ -83,7 +83,10 @@ namespace WinAppBJ.ViewModels
                 }
                 else
                 {
-                    var dialog = new MessageDialog(json,"Connexion refuse");
+                    var res = await response.Content.ReadAsStringAsync();
+                    var jobject = JObject.Parse(res);
+                    
+                    var dialog = new MessageDialog(jobject["message"].ToString(),"Connexion refusee");
                     await dialog.ShowAsync();
 
                 }

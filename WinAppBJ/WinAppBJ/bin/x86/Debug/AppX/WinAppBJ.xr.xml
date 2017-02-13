@@ -47,8 +47,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Inlines" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>

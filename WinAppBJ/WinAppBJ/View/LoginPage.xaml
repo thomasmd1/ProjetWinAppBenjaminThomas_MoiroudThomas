@@ -34,7 +34,7 @@
                 <TextBlock FontSize="36" Text="Connectez vous" Margin="0,0,0,20" />
                 <TextBlock  Text="Identifiant" HorizontalAlignment="Center" />
                 <TextBox x:Name="txbEmail"/>
-                <TextBlock Text="Password" HorizontalAlignment="Center" />
+                <TextBlock x:Name="txbPassword" Text="Password" HorizontalAlignment="Center" />
                 <PasswordBox x:Name="passwordConnection"/>
                 <Button HorizontalAlignment="Center" Width="150" Height="50" 
                         Content="Valider" Click="OnClickConnectUser"  
