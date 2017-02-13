@@ -7,8 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:WinAppBJ.ViewModel"
     mc:Ignorable="d">
-    
-    <Grid Background="Gray">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/wallRoom.jpg"/>
+        </Grid.Background>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"></ColumnDefinition>
@@ -16,7 +19,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0">
+        <StackPanel Grid.Column="0" BorderThickness="0,100,0,0">
             <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#33F70000" Click="OnclickDeconnect"/>
         </StackPanel>
         <!-- Affichage des Tables Libres -->
@@ -27,7 +30,7 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            
+
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock>
                                     <!-- On affiche les tables -->
@@ -46,13 +49,13 @@
                                 <Button Content="Join" Background="Green" Click="GoTO"></Button>
                                 <Button x:Name="tbRoom"  Visibility="Collapsed"></Button>
                             </StackPanel>
-                         
+
                         </StackPanel>
-                        
+
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            
+
         </StackPanel>
 
         <StackPanel Grid.Column="2">
@@ -75,7 +78,7 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-        
+
 
     </Grid>
 </Page>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WinAppBJ.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -34,9 +35,14 @@ namespace WinAppBJ
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var parameter = e.Parameter as User;
+            RoomViewModel rvm = new RoomViewModel(parameter);
             user = parameter;
         }
 
-
+        private void OnclickDeconnect(object sender, RoutedEventArgs e)
+        {
+            RoomViewModel rvm = new RoomViewModel(user);
+            rvm.DeconnectUser();
+        }
     }
 }

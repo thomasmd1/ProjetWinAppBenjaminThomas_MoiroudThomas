@@ -6,9 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    
-    
-    <Grid Background="Green">
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/wallGame.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
@@ -17,9 +20,9 @@
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" Padding="25">
             <StackPanel Orientation="Horizontal">
-                
+
                 <!-- TextBlock ou seront afficher les cartes de la banque-->
-                <TextBlock>Bank handt</TextBlock>
+                <TextBlock>Bank hand</TextBlock>
                 <TextBlock Margin="25" x:Name="BanqueCard1">Place Card 1</TextBlock>
                 <TextBlock Margin="25" x:Name="BanqueCard2">Place Card 2</TextBlock>
                 <TextBlock Margin="25" x:Name="BanqueCard3">Place Card 3</TextBlock>
@@ -51,7 +54,7 @@
                 <Button x:Name="buttonStart" Content="START" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
                 <Button x:Name="buttonEnd" Content="END" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
                 <Button x:Name="buttonHit" Content="HIT" HorizontalAlignment="Left" Width="140" Height="80" Margin="5"/>
-                <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Left" Width="140" Height="80" Margin="5" Background="#7FFF0000"/>
+                <Button x:Name="btnDisconnect" Content="Déconnexion" HorizontalAlignment="Left" Width="140" Height="80" Margin="5" Background="#7FFF0000" Click="OnclickDeconnect"/>
             </StackPanel>
 
             <StackPanel Margin="15">

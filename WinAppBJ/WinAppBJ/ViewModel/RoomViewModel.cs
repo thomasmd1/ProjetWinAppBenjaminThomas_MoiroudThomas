@@ -143,12 +143,11 @@ namespace WinAppBJ.ViewModel
                 if (response.IsSuccessStatusCode)
                 {
 
-                    var dialog = new MessageDialog("Vous avez été déconnecté");
-                    await dialog.ShowAsync();
-
                     //Redirection vers la page "LoginPage"
                     actualFrame.Navigate(typeof(LoginPage));
 
+                    var dialog = new MessageDialog("Vous avez été déconnecté");
+                    await dialog.ShowAsync();
 
                 }
                 else
