@@ -43,5 +43,10 @@ namespace WinAppBJ
             RoomViewModel rvm = new RoomViewModel(parameter);
             user = parameter;
         }
+
+        private void GoTO(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GamePage),user);
+        }
     }
 }

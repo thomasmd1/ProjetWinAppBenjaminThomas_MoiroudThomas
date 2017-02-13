@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    
+    
     <Grid Background="Green">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -18,11 +19,13 @@
             <StackPanel Orientation="Horizontal">
                 
                 <!-- TextBlock ou seront afficher les cartes de la banque-->
-                <TextBlock Margin="25" x:Name="BanqueCard1">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="BanqueCard2">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="BanqueCard3">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="BanqueCard4">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="BanqueCard5">Aaaaa</TextBlock>
+                <TextBlock>Bank handt</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard1">Place Card 1</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard2">Place Card 2</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard3">Place Card 3</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard4">Place Card 4</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard5">Place Card 5</TextBlock>
+                <TextBlock Margin="25" x:Name="BanqueCard6">Place Card 6</TextBlock>
             </StackPanel>
         </StackPanel>
 
@@ -30,11 +33,13 @@
             <StackPanel Orientation="Horizontal">
 
                 <!-- TextBlock ou seront afficher les cartes du joueur-->
-                <TextBlock Margin="25" x:Name="PlayerCard1">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="PlayerCard2">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="PlayerCard3">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="PlayerCard4">Aaaaa</TextBlock>
-                <TextBlock Margin="25" x:Name="PlayerCard5">Aaaaa</TextBlock>
+                <TextBlock>Player hand</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard1">Place Card 1</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard2">Place Card 2</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard3">Place Card 3</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard4">Place Card 4</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard5">Place Card 5</TextBlock>
+                <TextBlock Margin="25" x:Name="PlayerCard6">Place Card 6</TextBlock>
             </StackPanel>
         </StackPanel>
 
@@ -58,6 +63,12 @@
                 <RadioButton>50$</RadioButton>
                 <RadioButton>75 $</RadioButton>
                 <RadioButton>100 $</RadioButton>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>Stack</TextBlock>
+                <TextBlock>
+                    <Run Text="{Binding Path=stack}"></Run>
+                </TextBlock>
             </StackPanel>
         </StackPanel>
 

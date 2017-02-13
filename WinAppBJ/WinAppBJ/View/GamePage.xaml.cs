@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,11 +23,20 @@ namespace WinAppBJ
     /// </summary>
     public sealed partial class GamePage : Page
     {
+        private User user;
+
         public GamePage()
         {
             this.InitializeComponent();
+            this.DataContext = user;
         }
 
-        
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var parameter = e.Parameter as User;
+            user = parameter;
+        }
+
+
     }
 }

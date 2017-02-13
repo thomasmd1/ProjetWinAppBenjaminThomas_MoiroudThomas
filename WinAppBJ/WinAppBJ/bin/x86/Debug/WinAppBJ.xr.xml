@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="stack" />
     <RootPropertyPathName Name="Users" />
     <RootPropertyPathName Name="lastname" />
     <RootPropertyPathName Name="firstname" />
     <RootPropertyPathName Name="Tables" />
+    <RootPropertyPathName Name="minBet" />
+    <RootPropertyPathName Name="maxSeat" />
+    <RootPropertyPathName Name="seatAvailable" />
     <RootPropertyPathName Name="id" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -43,6 +47,13 @@
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
     </RootType>
@@ -53,6 +64,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
@@ -80,15 +92,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="Path" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="WinAppBJ.RoomPage" />
   </Roots.RootTypes>

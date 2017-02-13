@@ -9,11 +9,10 @@ namespace DataModel
     public class Table
     {
         public int id { get; set; }
-
-        public Table (int id)
-        {
-            this.id = id;
-        }
+        public int maxSeat { get; set; }
+        public int seatAvailable { get; set; }
+        public int minBet { get; set; }
+        public Boolean isClose { get; set; }
 
         public Table()
         {

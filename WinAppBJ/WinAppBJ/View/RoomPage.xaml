@@ -23,15 +23,32 @@
         <StackPanel Grid.Column="1">
             <TextBlock Text="Room" HorizontalAlignment="Center"></TextBlock>
             <!-- Binding des tables en mode Twoway -->
-            <ListBox ItemsSource="{Binding Tables,Mode=TwoWay}" Background="Gray" Width="150">
+            <ListBox ItemsSource="{Binding Tables,Mode=TwoWay}" Background="Gray">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock>
-                                    <!-- On affiche L'id des tables -->
-                                    <Run Text="{Binding Path=id}"></Run>
-                            </TextBlock>
+                            
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock>
+                                    <!-- On affiche les tables -->
+                                <Run Text="Room"></Run>
+                                <Run Text="{Binding Path=id}"></Run>
+                                <Run Text=""></Run>
+                                <Run Text="{Binding Path=seatAvailable}"></Run>
+                                <Run Text="/"></Run>
+                                <Run Text="{Binding Path=maxSeat}"></Run>
+                                <Run Text="(min bet :"></Run>
+                                <Run Text="{Binding Path=minBet}"></Run>
+                                <Run Text="$)"></Run>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Button Content="Join" Background="Green" Click="GoTO"></Button>
+                                <Button x:Name="tbRoom"  Visibility="Collapsed"></Button>
+                            </StackPanel>
+                         
                         </StackPanel>
+                        
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

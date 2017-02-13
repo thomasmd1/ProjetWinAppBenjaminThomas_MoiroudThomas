@@ -86,7 +86,6 @@ C:\Users\thomas.moiroud\Documents\ProjetBlackjack\WinAppBJ\DataModel\obj\x86\Deb
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\bin\x86\Debug\DataModel.dll
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\bin\x86\Debug\DataModel.pdb
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\bin\x86\Debug\DataModel.pri
-C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\obj\x86\Debug\DataModel.csprojResolveAssemblyReference.cache
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\obj\x86\Debug\DataModel.dll
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\obj\x86\Debug\DataModel.pdb
 C:\Users\benjaminthomas\Source\Repos\ProjetWinAppBenjaminThomas_MoiroudThomas\WinAppBJ\DataModel\obj\x86\Debug\priconfig.xml

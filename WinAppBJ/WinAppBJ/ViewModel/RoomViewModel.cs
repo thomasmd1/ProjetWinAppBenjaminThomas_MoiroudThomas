@@ -31,13 +31,12 @@ namespace WinAppBJ.ViewModel
             this.user = new User();
             this.user = u;
 
-            Onlines = new List<User>();
-            Free = new List<Table>();
             Room = new Room();
             getPlayerOnline();
-            //GetOpenedTable();
+            GetOpenedTable();
         }
-        
+
+        //Call Api permettant de récupèrer la liste des joueurs en ligne
         public async void getPlayerOnline()
         {
             using (var client = new HttpClient())
@@ -63,12 +62,12 @@ namespace WinAppBJ.ViewModel
                             lastname = item["lastname"].ToString()
                         };
                         //On récupère le firstname et lastname puis on les ajoutes à la liste Online
-                        Onlines.Add(u);
+                        Room.Users.Add(u);
                     }
 
                     //var dialog = new MessageDialog(resultsUser.ToString(), "Passed");
                     //await dialog.ShowAsync();
-                    Room.Users = Onlines;
+                    //Room.Users = Onlines;
                     //Redirection vers la page Room
                     actualFrame.DataContext = Room;
                 }
@@ -82,6 +81,7 @@ namespace WinAppBJ.ViewModel
             }
         }
 
+        //Call Api permettant de récupèrer les tables
         public async void GetOpenedTable()
         {
             using (var client = new HttpClient())
@@ -101,17 +101,23 @@ namespace WinAppBJ.ViewModel
                     for (int i = 0; i < resultsTables.Count(); i++)
                     {
                         var item = resultsTables.ElementAt(i);
-                        Table t = new Table();
+                        Table t = new Table()
                         {
-                            var id = item["id"];
+                            id = int.Parse(item["id"].ToString()),
+                            //isClose = bool.Parse(item["is_closed"].ToString()),
+                            maxSeat = int.Parse(item["max_seat"].ToString()),
+                            seatAvailable = int.Parse(item["seats_available"].ToString()),
+                            minBet = int.Parse(item["min_bet"].ToString())
+
                         };
                         //On récupère le firstname et lastname puis on les ajoutes à la liste Online
-                        Free.Add(t);
+                        Room.Tables.Add(t);
                         
                     }
+                    //Debug.WriteLine(res);
                     //var dialog = new MessageDialog(res, "Passed");
                     //await dialog.ShowAsync();
-                    Room.Tables = Free;
+                    //Room..Tables = Free;
                     actualFrame.DataContext = Room;
                 } else
                 {
@@ -121,6 +127,7 @@ namespace WinAppBJ.ViewModel
                 }
             }
         }
+        
         //Call Api permettant la déconnexion de l'utilisateur
         public async void DeconnectUser()
         {
