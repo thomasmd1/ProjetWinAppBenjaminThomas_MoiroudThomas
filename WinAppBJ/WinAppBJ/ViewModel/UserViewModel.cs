@@ -19,24 +19,6 @@ namespace WinAppBJ.ViewModels
 
     class UserViewModel
     {
-
-        //private Api _api;
-        //public Api Api
-        //{
-        //    get { return _api; }
-        //    set
-        //    {
-        //        SetProperty<Api>(ref this._api, value);
-        //    }
-        //}
-
-        //private void SetProperty<T>(ref T _api, T value)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
-
         //Permet de définir dans quelle Frame on se situe
         Frame actualFrame { get { return Window.Current.Content as Frame; } }
 
@@ -62,9 +44,6 @@ namespace WinAppBJ.ViewModels
                     await dialog.ShowAsync();
 
                 }
-
-                ////    var dialog = new MessageDialog(json);
-                ////    await dialog.ShowAsync();
             }
         }
 
@@ -96,9 +75,6 @@ namespace WinAppBJ.ViewModels
                     user.email = resultsUser["email"].ToString();
                     user.stack = int.Parse(resultsUser["stack"].ToString());
 
-                    //this.Api = new Api();
-                    //this.Api = this.Api = JsonConvert.DeserializeObject<Api>(res);
-
                     //Redirection de l'utilisateur vers la page "RoomPage"
                     actualFrame.Navigate(typeof(RoomPage),user);
 
@@ -107,8 +83,6 @@ namespace WinAppBJ.ViewModels
                 }
                 else
                 {
-                    //var res = await response.Content.ReadAsStringAsync();
-
                     var dialog = new MessageDialog(json,"Connexion refuse");
                     await dialog.ShowAsync();
 

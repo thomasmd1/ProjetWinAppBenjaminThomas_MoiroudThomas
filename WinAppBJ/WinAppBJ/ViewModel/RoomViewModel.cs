@@ -26,22 +26,6 @@ namespace WinAppBJ.ViewModel
 
         private User user;
 
-        //private Api _api;
-
-        //public Api Api
-        //{
-        //    get { return _api; }
-        //    set
-        //    {
-        //        SetProperty(ref this._api, value);
-        //    }
-        //}
-
-        //private void SetProperty(ref Api _api, Api value)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         public RoomViewModel(User u)
         {
             this.user = new User();
@@ -143,8 +127,9 @@ namespace WinAppBJ.ViewModel
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://demo.comte.re");
+                
 
-                var json = JsonConvert.SerializeObject(user.email);
+                var json = JsonConvert.SerializeObject(new {email = user.email});
                 var itemJson = new StringContent(json, Encoding.UTF8, "application/json");
                 client.DefaultRequestHeaders.Add("authorization", "Bearer " + this.user.tokens);
                 HttpResponseMessage response = await client.PostAsync("/api/auth/logout", itemJson);
@@ -161,7 +146,7 @@ namespace WinAppBJ.ViewModel
                 }
                 else
                 {
-                    var dialog = new MessageDialog("Failed");
+                    var dialog = new MessageDialog(json,"Failed");
                     await dialog.ShowAsync();
                 }
             }
