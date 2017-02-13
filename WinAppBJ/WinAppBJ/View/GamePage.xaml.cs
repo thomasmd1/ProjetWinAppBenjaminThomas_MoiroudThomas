@@ -34,6 +34,7 @@ namespace WinAppBJ
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var parameter = e.Parameter as User;
+            user = parameter;
             this.DataContext = parameter;
         }
 
